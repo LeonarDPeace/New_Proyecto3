@@ -1,0 +1,166 @@
+/* Variables de colores pastel */
+:root {
+  --color-primary: #FFE5E5;
+  --color-secondary: #E5F1FF;
+  --color-accent: #FFE5F1;
+  --color-background: #FFF5E5;
+  --color-text: #4A4A4A;
+  --color-border: #D1D1D1;
+  --color-success: #B5EAD7;
+  --color-error: #FFB7B2;
+}
+
+/* Estilos generales */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/* Estilos de las tarjetas */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del formulario */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #4A90E2;
+}
+
+.button {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #FFD5D5;
+}
+
+/* Contenedor del árbol */
+.tree-container {
+  height: 500px;
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de la red */
+.network-container {
+  height: 500px;
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la lista de conexiones */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: var(--color-secondary);
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos para los nodos del árbol */
+.node__root {
+  fill: var(--color-primary);
+  stroke: #FFB5B5;
+}
+
+.node__branch {
+  fill: var(--color-secondary);
+  stroke: #B5D8FF;
+}
+
+.node__leaf {
+  fill: var(--color-accent);
+  stroke: #FFB5E5;
+}
+
+/* Estilos para mensajes de ayuda */
+.helper-text {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para el contador de subordinados */
+.subordinate-count {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .tree-container,
+  .network-container {
+    height: 400px;
+  }
+}

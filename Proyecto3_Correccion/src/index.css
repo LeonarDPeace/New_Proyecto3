@@ -1,0 +1,100 @@
+:root {
+  --primary-color: #FFB5B5; 
+  --secondary-color: #B5D8FF; 
+  --accent-color: #B5FFB5;   
+  --background-color: #FFF5E6; 
+  --text-color: #4A4A4A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #ffa5a5;
+}
+
+.input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Tree Visualization Styles */
+.tree-container {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+/* Network Graph Styles */
+.network-container {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* Employee Node Styles */
+.employee-node {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.employee-node.selected {
+  background-color: var(--accent-color);
+}
